@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNS Home Designs - Coming Soon</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+            color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            padding: 20px;
+        }
+
+        /* 🔥 Animated Heading */
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            color: #ff3b3b;
+
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeSlide 1.8s ease-out forwards, glow 2s ease-in-out infinite alternate;
+        }
+
+        /* Fade + Slide */
+        @keyframes fadeSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Glow Effect */
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #ff3b3b, 0 0 10px #ff3b3b;
+            }
+            to {
+                text-shadow: 0 0 15px #ff0000, 0 0 25px #ff0000;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: #cccccc;
+            opacity: 0;
+            animation: fadeIn 2.5s ease-in forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .highlight {
+            color: #00c3ff;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #777;
+            opacity: 0;
+            animation: fadeIn 2.5s ease-in forwards;
+            animation-delay: 1.5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>"RNS Home Designs"<br>Website is Coming Soon</h1>
+
+        <p>
+            Welcome to <span class="highlight">RNS Design</span> – your future partner in creating beautiful, functional, and inspiring living spaces. 
+            Our upcoming platform is designed to help you discover and select your <span class="highlight">dream home</span> with ease and confidence. 
+            Stay tuned as we bring you innovative design ideas, professional expertise, and personalized solutions to turn your vision into reality.
+        </p>
+
+        <footer>
+            &copy; 2026 RNS Design. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
